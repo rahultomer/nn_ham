@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="skyblue">
+<form action="expression">
+ <h1><font color="red" >  first page</font></h1>
+    Vectors :
+    <div id="div1">
+        <button onclick ="appendRow()" value="Add Row">Add Row</button>
+        <br>
+    </div>
+    <br>
+    <input type="submit">
+</form>
+<script>
+var x=1
+function appendRow()
+{
+    var d = document.getElementById("div1");
+   d.innerHTML += "<br><input type='text' name='vec"+ x++ +"'><br>";
+   d.innerHTML += "<br><input type='hidden'  name='count' value='"+ x +"'><br>";
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>
